@@ -71,7 +71,7 @@ const Projects = () => {
                <div className='relative'>
                <img src={project.image}
                 alt={project.name}
-                className="relative h-[400px] w-full object-fit "
+                className="relative h-[400px] w-full object-fit mb-4"
                 />
                 <div className='absolute right-0 bottom-2'>
                 <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center rounded-full bg-black opacity-30 px-4 py-2 text-white hover:bg-gray-300 transition duration-300">
