@@ -57,7 +57,7 @@ export const PROJECTS = [
     name: "Personal Portfolio",
     description:"Created a portfolio website using React, Tailwind CSS, and Framer Motion to showcase my projects and skills. The responsive design, powered by Tailwind, ensures a modern and clean aesthetic.",
     image:Profile,
-    githubLink: "https://github.com/user/personal-portfolio",
+    githubLink: "https://github.com/Erayushsingh/MyPortfolio-",
   },
   
   {
