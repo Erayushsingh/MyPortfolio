@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import EducationSection from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 
 const App=()=>{
@@ -23,6 +24,7 @@ const App=()=>{
     <Skills/>
     <Contact/>
     <Footer/>
+    <Analytics />
 </div> 
 
     </div>
