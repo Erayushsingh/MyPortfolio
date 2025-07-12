@@ -1,31 +1,10 @@
 import React from 'react'
-import logo from "../assets/logo.png"
-import { SOCIAL_MEDIA_LINKS } from '../constants'
-import { motion } from "framer-motion"
 
 const Footer = () => {
     return (
-        <div className='mb-8 mt-20'>
-            <div className='flex items-center justify-center'>
-                <motion.img 
-                initial={{opacity:0}}
-                whileInView={{opacity:1}}
-                transition={{duration:0.5}}
-                src={logo} width={100} className='my-20 rounded-full' />
-            </div>
-            <div className='flex items-center justify-center gap-8'>
-                {SOCIAL_MEDIA_LINKS.map((link, index) => (
-                    <motion.a 
-                    initial={{opacity:0}}
-                    whileInView={{opacity:1}}
-                    transition={{duration:0.2,delay:index*0.5}}
-                    key={index} href={link.href} target="_blank" rel="noopener noreferrer">
-                        {link.icon}
-                    </motion.a>
-                ))}
-            </div>
-            <p className='mt-8 text-center text-sm tracking-wide text-black font-semibold'>
-               &copy;Ayush Singh. All rights reserved. 
+        <div className='mb-4 mt-8 md:mb-6 md:mt-12 lg:mb-8 lg:mt-16'>
+            <p className='text-center text-sm tracking-wide text-white/70 font-medium'>
+               &copy;2025 Ayush Singh. All rights reserved. 
             </p>
         </div>
     )

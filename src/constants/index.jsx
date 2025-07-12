@@ -2,19 +2,26 @@ import {
   FaXTwitter,
   FaGithub,
   FaLinkedin,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaGitAlt,
+  FaDocker,
 } from "react-icons/fa6";
 
 
 import Redux from "../assets/Redux.png"
 import ReduxPersistent2 from "../assets/ReduxPersistent2.png"
 import Shop from "../assets/Shop.png"
-import Payment from "../assets/Stripepay.png"
+import R11 from "../assets/R11.png"
 import BMI from "../assets/BMI.png"
 import Profile from "../assets/Profile.png"
+import Arya from "../assets/Arya.png"
+import HMS1 from "../assets/HMS1.jpeg"
 
 
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiVite } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlinePython } from "react-icons/ai";
@@ -23,10 +30,11 @@ import { SiPostman } from "react-icons/si";
 
 
 export const NAVIGATION_LINKS = [
-  { label: "Bio", href: "#bio" },
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
-  { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -53,14 +61,6 @@ export const PROJECTS = [
     githubLink: "https://github.com/Erayushsingh/BMI-Calculator",
   },
   {
-    id: 2,
-    name: "Personal Portfolio",
-    description:"Created a portfolio website using React, Tailwind CSS, and Framer Motion to showcase my projects and skills. The responsive design, powered by Tailwind, ensures a modern and clean aesthetic.",
-    image:Profile,
-    githubLink: "https://github.com/Erayushsingh/MyPortfolio",
-  },
-  
-  {
     id: 4,
     name: "Mode Switcher",
     description:
@@ -76,57 +76,97 @@ export const PROJECTS = [
     image:Redux,
     githubLink: "https://github.com/Erayushsingh/Redux",
   },
-  {
-    id: 6,
-    name: "E-commerce",
-    description:
-      "An e-commerce website powered by Firebase for backend support, enabling real-time data synchronization and seamless user authentication.",
-    image:Shop,
-    githubLink: "https://github.com/Erayushsingh/Shop-",
-  },
 
   {
     id: 7,
-    name: "Resturant",
+    name: "RAASHEE-An International Conference Website",
     description:
-      "A restaurant website using Node.js and Express.js for the backend, with React for a dynamic user interface. The application features JWT for secure authentication, MongoDB for data management, and Stripe for seamless payment processing. Users can easily browse the menu and place orders.",
-    image:Payment,
-    githubLink: "https://github.com/Erayushsingh/Resturant",
+      "A conference website built with React and Node.js, featuring a dynamic schedule, speaker profiles, and real-time updates.",
+    image:R11,
+    githubLink: "https://github.com/Erayushsingh/Conference_LU1",
   },
+
+  {
+    id: 6,
+    name: "ARYA",
+    description:
+      "Simple and Elegant web app powered by Fast API , Gemini for LLM parsing and real time voice command (both side server-client). Detect Indian major 12 language.",
+    image:Arya,
+    githubLink: "https://github.com/Erayushsingh/ARYA",
+  },
+
+{
+    id: 8,
+    name: "HMS",
+    description:
+      "The Hostel Management System (HMS) is a comprehensive solution designed to streamline hostel-related processes",
+    image:HMS1,
+    githubLink: "https://github.com/Erayushsingh/Project-HMS",
+  },
+
 ];
 
 
 export const SKILLS = [
   {
+    icon: <FaHtml5 className="text-4xl text-orange-500 lg:text-5xl" />,
+    name: "HTML",
+  },
+  {
+    icon: <FaCss3Alt className="text-4xl text-blue-500 lg:text-5xl" />,
+    name: "CSS",
+  },
+  {
+    icon: <FaJs className="text-4xl text-yellow-500 lg:text-5xl" />,
+    name: "JavaScript",
+  },
+  {
     icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
     name: "React",
   },
   {
-    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "MongoDB",
+    icon: <SiTailwindcss className="text-4xl text-cyan-500 lg:text-5xl" />,
+    name: "Tailwind CSS",
   },
   {
     icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
     name: "Node.js",
   },
   {
+    icon: <SiExpress className="text-4xl text-gray-600 lg:text-5xl" />,
+    name: "Express",
+  },
+  {
+    icon: <AiOutlinePython className="text-4xl text-blue-600 lg:text-5xl" />,
+    name: "Python",
+  },
+  {
+    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
+    name: "MongoDB",
+  },
+  {
+    icon: <BiLogoPostgresql className="text-4xl text-blue-700 lg:text-5xl" />,
+    name: "PostgreSQL",
+  },
+  {
     icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
     name: "SQL",
   },
   {
-    icon:<AiOutlinePython   className="text-4xl text-sky-700 lg:text-5xl"/>,
-    name:"Python" 
-
+    icon: <SiPostman className="text-4xl text-orange-600 lg:text-5xl" />,
+    name: "Postman",
   },
   {
-    icon:<SiExpress  className="text-4xl text-sky-700 lg:text-5xl"/>,
-    name:"Express"
-
+    icon: <FaGitAlt className="text-4xl text-red-600 lg:text-5xl" />,
+    name: "Git",
   },
   {
-    icon:<SiPostman  className="text-4xl text-sky-700 lg:text-5xl"/>,
-    name:"Postman"
-
+    icon: <FaDocker className="text-4xl text-blue-600 lg:text-5xl" />,
+    name: "Docker",
+  },
+  {
+    icon: <SiVite className="text-4xl text-purple-600 lg:text-5xl" />,
+    name: "Vite",
   },
 ];
 
